@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>San Valentino ❤️</title>
+<style>
+body {
+  font-family: 'Georgia', serif;
+  background: url('TUA_FOTO.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align:center;
+  padding:30px;
+  color:white;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  padding:30px;
+  border-radius:20px;
+  max-width:700px;
+  margin:auto;
+  box-shadow:0 0 30px rgba(0,0,0,0.7);
+}
+
+button {
+  padding:15px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  margin:15px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+#menuBtn { background:#e63946; color:white; }
+#ideaBtn { background:#6c757d; color:white; }
+
+.hidden { display:none; }
+
+h1 { font-size:36px; }
+h2 { color:#ffccd5; }
+
+</style>
+</head>
+
+<body>
+
+<!-- Musica romantica -->
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_8a0c2a5c9b.mp3" type="audio/mpeg">
+</audio>
+
+<div class="overlay">
+
+<h1>💌 Sorpresa per San Valentino 💌</h1>
+<p>Vuoi una serata romantica con il tuo cuoco personale? ✨</p>
+
+<button id="menuBtn" onclick="showMenu()">Scopri menù per cena romantica da me con cuoco personale</button>
+<button id="ideaBtn" onclick="showIdea()">Pensiamo ad altro</button>
+
+<div id="menu" class="hidden">
+<h2>🍽️ Menù per il mio amore ❤️</h2>
+
+<p><b>Gnocchi alla sorrentina</b> o <b>Penne alla scapece</b><br>
+(Insieme a tanto amore)</p>
+
+<p><b>Polpettine</b><br>
+(Insieme a tanti bacini)</p>
+
+<p><b>Acqua e cuoco amorevole inclusi</b></p>
+
+<p>✨ Extra: Cuoco vestito elegante, ma ci vogliono 3 bacini in più 😘</p>
+
+<h3>Ti aspetto il 14 Febbraio ore 20:30<br>alla dimora Marino ❤️</h3>
+</div>
+
+<div id="idea" class="hidden">
+<h2>💡 Dammi un’idea!</h2>
+<p>Però dai… dai comunque uno sguardo al menù almeno 😜</p>
+</div>
+
+</div>
+
+<script>
+function showMenu() {
+  document.getElementById("menu").style.display="block";
+  document.getElementById("idea").style.display="none";
+}
+
+function showIdea() {
+  document.getElementById("idea").style.display="block";
+  document.getElementById("menu").style.display="none";
+}
+</script>
+
+</body>
+</html>
